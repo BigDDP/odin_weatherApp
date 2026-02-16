@@ -7,7 +7,7 @@ export default async function mockFetchData() {
     loader.classList.add("yes-loader");
 
     try {
-        const response = await fetch(`/mockWeather.json`);
+        const response = await fetch(`mockWeather.json`);
         
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`)
